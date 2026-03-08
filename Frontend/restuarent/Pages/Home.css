@@ -1,0 +1,75 @@
+.home-wrapper {
+  min-height: 100vh;
+  background-color: #fff4cc;
+  font-family: sans-serif;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 110px 20px 100px;
+  background-color: #e1bb20;
+  border-bottom: 3px solid #b11212;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 800;
+  color: #b11212;
+  margin-bottom: 10px;
+}
+
+.moto {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #7a0c0c;
+}
+
+.home-sub {
+  font-size: 16px;
+  color: #5c1a1a;
+  margin-bottom: 28px;
+}
+
+.h-btn {
+  padding: 15px 42px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  background-color: #b11212;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(177, 18, 18, 0.4);
+}
+
+.menu {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.home-section-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #b11212;
+  margin-bottom: 40px;
+}
+
+.about {
+  padding: 70px 30px;
+  background-color: #e1bb20;
+  text-align: center;
+}
+
+.about-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a1c1c;
+}

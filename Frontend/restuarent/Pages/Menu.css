@@ -1,0 +1,174 @@
+/* ================= PAGE ================= */
+.menu-page {
+  background-color: #fff4cc;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+/* ================= HERO ================= */
+.menu-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  padding: 90px 70px;
+  background-color: #fff7db;
+  border-bottom: 3px solid #b11212;
+}
+
+.menu-hero-text h1 {
+  font-size: 56px;
+  color: #7a0c0c;
+  margin-bottom: 20px;
+}
+
+.menu-hero-text h1 span {
+  color: #b11212;
+}
+
+.menu-hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5c1a1a;
+  max-width: 500px;
+}
+
+/* Image Ring */
+.menu-hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-ring {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: #e1bb20;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.image-ring img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background: white;
+}
+
+/* ================= THALI ================= */
+.thali-section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #b11212;
+  margin-bottom: 50px;
+}
+
+.thali-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.thali-box {
+  background: #fffbe8;
+  border-radius: 22px;
+  padding: 35px 25px;
+  border: 2px solid #f0d58a;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.thali-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(177, 18, 18, 0.25);
+}
+
+.thali-box h3 {
+  font-size: 26px;
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.thali-box p {
+  font-size: 15px;
+  color: #4a1c1c;
+  line-height: 1.6;
+}
+
+/* Premium Middle Card */
+.thali-box.premium {
+  background-color: #fff0b3;
+  border: 3px solid #b11212;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 20px;
+  background-color: #f3d87a;
+  color: #7a0c0c;
+  font-weight: 700;
+}
+
+.tag.best {
+  background-color: #b11212;
+  color: #ffffff;
+}
+
+/* ================= SABJI BAR ================= */
+.menu-highlight {
+  margin: 2px auto 0;
+  max-width: 1100px;
+  background-color: #e1bb20;
+  border-radius: 60px;
+  padding: 26px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  margin-top: 2px;
+}
+
+.highlight-item {
+  font-size: 16px;
+  color: #4a1c1c;
+}
+
+.highlight-item span {
+  margin-left: 8px;
+  font-weight: 700;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .menu-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .menu-hero-text p {
+    margin: auto;
+  }
+
+  .thali-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-highlight {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}

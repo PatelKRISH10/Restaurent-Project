@@ -1,0 +1,206 @@
+/* ================= ROOT ================= */
+.dining-page {
+  background: linear-gradient(180deg, #fff7db 0%, #fff2c2 100%);
+  min-height: 100vh;
+  padding-bottom: 80px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= HERO ================= */
+.dining-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  padding: 120px 90px 80px;
+  gap: 60px;
+}
+
+.dining-hero-text h1 {
+  font-size: 56px;
+  line-height: 1.15;
+  color: #7a0c0c;
+  margin-bottom: 20px;
+}
+
+.dining-hero-text h1 span {
+  color: #b11212;
+}
+
+.dining-hero-text p {
+  font-size: 18px;
+  color: #5c1a1a;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+.hero-note {
+  margin-top: 26px;
+  display: inline-block;
+  background: #fff0b3;
+  padding: 12px 22px;
+  border-radius: 40px;
+  font-weight: 600;
+  color: #7a0c0c;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* HERO IMAGE */
+.dining-hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.dining-hero-image img {
+  max-width: 420px;
+  background: white;
+  padding: 20px;
+  border-radius: 26px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+}
+
+/* ================= BOOKING BAR ================= */
+.booking-bar {
+  margin: 40px auto 0;
+  max-width: 900px;
+  background: white;
+  border-radius: 60px;
+  padding: 22px 30px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+}
+
+.booking-bar select,
+.booking-bar input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.booking-bar button {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  background: #b11212;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ================= SECTION TITLES ================= */
+.section-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #b11212;
+  margin-bottom: 24px;
+}
+
+/* ================= BOOKINGS ================= */
+.card-section {
+  padding: 80px 90px 40px;
+}
+
+.booking-card {
+  background: #fffbe8;
+  border-radius: 26px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.booking-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-card th {
+  text-align: left;
+  padding-bottom: 12px;
+  color: #7a0c0c;
+}
+
+.booking-card td {
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* ================= ORDER SECTION ================= */
+.order-section {
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.order-left img {
+  width: 60%;
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+.order-right {
+  background: white;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.order-right h2 {
+  color: #b11212;
+  margin-bottom: 24px;
+}
+
+.order-right input,
+.order-right select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+}
+
+.order-right button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  background: #b11212;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .dining-hero,
+  .order-section {
+    grid-template-columns: 1fr;
+    padding: 80px 30px;
+    text-align: center;
+  }
+
+  .booking-bar {
+    flex-direction: column;
+    border-radius: 30px;
+  }
+}

@@ -1,0 +1,43 @@
+.filter-bar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.slot-buttons {
+  margin-bottom: 15px;
+}
+
+.slot-buttons button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #b11212;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.slot-buttons .active {
+  background-color: #b11212;
+  color: white;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  flex: 1;
+  background: #fff4cc;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.summary-card h3 {
+  margin-bottom: 10px;
+  color: #7a0c0c;
+}
